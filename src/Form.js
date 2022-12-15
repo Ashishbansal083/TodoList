@@ -7,9 +7,11 @@ const Form=({input,setInput,todos,setTodos})=>{
     }
     const onFormSubmit=(event)=>{
         event.preventDefault();
+        setTodos([...todos,{id:uuidv4(),title:input,completed:false}]);
+        setInput("");
     }
     return (
-        <form>
+        <form onSubmit={onFormSubmit}>
             <input type="text"
               placeholder='Enter a todo.....' 
               className='task-input'

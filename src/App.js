@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header';
 import Form from './Form';
 import { useState } from 'react';
+import TodoList from './TodoList';
 
 
 function App() {
@@ -20,7 +21,10 @@ function App() {
         todos={todos}
         setTodos={setTodos}    
          />        
-        </div>        
+        </div>    
+        <div>
+          <TodoList todos={todos} setTodos={setTodos}/>
+          </div>    
       </div>
     </div>
   );
