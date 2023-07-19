@@ -32,15 +32,15 @@ const TodoList=({todos,setTodos,setEditTodo})=> {
                     />
                     <div>
                         <button className='button-complete task-button' onClick={()=>handleComplete(todo)}>
-                            <i className='fa fa-check-circle'/>
+                            <i className='fa fa-check-circle'/>.
                             {/* Done */}
                         </button>
                         <button className='button-edit task-button' onClick={()=>handleEdit(todo)}>
-                            <i className='fa fa-edit'/>
+                            <i className='fa fa-edit'/>.
                             {/* Edit */}
                         </button>
                         <button className='button-delete task-button' onClick={()=>handleDelete(todo)}>
-                            <i className='fa fa-trash'/>
+                            <i className='fa fa-trash'/>.
                             {/* Delete */}
                         </button>
                     </div>
